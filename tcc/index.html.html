@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda.nidade - Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <ul class="nav-links">
+            <li><a href="projetos.html">projetos</a></li>
+            <li><a href="voluntariado.html">voluntariado</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Barra de Saudação e Pesquisa -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 30px 0;">
+            <h2 style="font-size: 28px; font-weight: 300;">Anna Mathias, bem-vinda de volta!</h2>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <div class="search-box" style="width: 300px;">
+                    <input type="text" placeholder="Pesquise Aqui" id="searchInput">
+                    <button class="icon-button" onclick="searchProjects()" aria-label="Pesquisar">
+                        <img src="imagens/icones/Search.png" alt="" class="icon icon--small">
+                    </button>
+                </div>
+                <div class="user-profile" onclick="goToProfile()" aria-label="Abrir perfil">
+                    <img src="imagens/icones/account_circle.png" alt="Perfil" style="width: 28px; height: 28px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout Principal -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+            <!-- Coluna Esquerda -->
+            <div>
+                <!-- Banner Principal - Carrossel -->
+                <div style="border-radius: 20px; margin-bottom: 20px; position: relative; overflow: hidden; height: 280px;">
+                    <div id="bannerCarousel" style="position: relative; width: 100%; height: 100%;">
+                        <div class="carousel-slide active">
+                            <img src="imagens/VOLUNTARIE-SE!.png" alt="Voluntarie-se!" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/VOLUNTARIE-SE! (1).png" alt="Voluntarie-se!" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/VOLUNTARIE-SE! (2).png" alt="Voluntarie-se!" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        </div>
+                        
+                        <!-- Indicadores -->
+                        <div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+                            <div class="carousel-dot" onclick="goToSlide(1)"></div>
+                            <div class="carousel-dot" onclick="goToSlide(2)"></div>
+                        </div>
+                        
+                        <!-- Setas de Navegação -->
+                        <button class="carousel-btn prev icon-button" onclick="changeSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10; transition: background 0.3s;" aria-label="Slide anterior">
+                            <img src="imagens/icones/arrow_back.png" alt="" class="icon icon--small">
+                        </button>
+                        <button class="carousel-btn next icon-button" onclick="changeSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10; transition: background 0.3s;" aria-label="Próximo slide">
+                            <img src="imagens/icones/arrow_back.png" alt="" class="icon icon--small" style="transform: rotate(180deg);">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Carrossel de Voluntários -->
+                <div class="volunteers-carousel">
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Helena')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa1.jpg" alt="Helena">
+                        </div>
+                        <div class="volunteer-name">Helena</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Parrot-E')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa2.jpg" alt="Parrot-E">
+                        </div>
+                        <div class="volunteer-name">Parrot-E</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: George B')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa3.jpg" alt="George B">
+                        </div>
+                        <div class="volunteer-name">George B</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Fernando E')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa4.jpg" alt="Fernando E">
+                        </div>
+                        <div class="volunteer-name">Fernando E</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Gabriely')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa5.jpg" alt="Gabriely">
+                        </div>
+                        <div class="volunteer-name">Gabriely</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Thayla')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa6.jpg" alt="Thayla">
+                        </div>
+                        <div class="volunteer-name">Thayla</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Leticia W')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa7.jpg" alt="Leticia W">
+                        </div>
+                        <div class="volunteer-name">Leticia W</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Mayara A')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa8.jpg" alt="Mayara A">
+                        </div>
+                        <div class="volunteer-name">Mayara A</div>
+                    </div>
+                    <div class="volunteer-card" onclick="showAlert('Perfil: Igor S')">
+                        <div class="volunteer-avatar">
+                            <img src="imagens/pessoas/pessoa9.jpg" alt="Igor S">
+                        </div>
+                        <div class="volunteer-name">Igor S</div>
+                    </div>
+                </div>
+
+                <!-- Editor de Post -->
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 30px; margin-bottom: 20px;">
+                    <textarea id="postContent" placeholder="qual foi o último projeto que você participou?" style="width: 100%; min-height: 100px; border: none; background: transparent; font-size: 16px; color: #2c3e50; resize: vertical;"></textarea>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <button class="icon-button" onclick="showAlert('Adicionar imagem')" aria-label="Adicionar imagem">
+                            <img src="imagens/icones/Camera.png" alt="" class="icon">
+                        </button>
+                        <button class="icon-button" onclick="showAlert('Adicionar vídeo')" aria-label="Adicionar vídeo">
+                            <img src="imagens/icones/Video.png" alt="" class="icon">
+                        </button>
+                        <button class="icon-button" onclick="showAlert('Adicionar link')" aria-label="Adicionar link">
+                            <img src="imagens/icones/attach_file.png" alt="" class="icon">
+                        </button>
+                        <button onclick="showAlert('Texto em negrito')" style="background: none; border: none; cursor: pointer; font-size: 20px;">B</button>
+                        <button onclick="showAlert('Sublinhado')" style="background: none; border: none; cursor: pointer; font-size: 20px;">U</button>
+                    </div>
+                </div>
+
+                <!-- Post de Projeto -->
+                <div class="project-post fade-in">
+                    <div class="post-header">
+                        <div style="flex: 1;">
+                            <h3>Novo Projeto Cadastrado!<br>Criadouro Onça Pintada</h3>
+                            <div class="post-tags">
+                                <span class="tag">ecologia</span>
+                                <span class="tag">voluntariado</span>
+                            </div>
+                            <p style="color: #7f8c8d; font-size: 14px;">O Criadouro Onça Pintada é mantido pela Associação de Pesquisa e Conservação da Vida Silvestre, que tem como objetivo sustentá-lo e ampliá-lo dentro dos padrões de qualidade exigidos pelo IBAMA, colaborando com a preservação e perpetuação da fauna e da flora silvestres do país. Atualmente o Criadouro Onça Pintada ocupa uma área de 168 hectares, possuindo mais de 150 recintos que abrigam mais de 2.200 animais de 190 espécies.</p>
+                            <a href="organizacao.html?projeto=onca-pintada" style="margin-top: 15px; display: inline-block; background-color: #ff8c42; color: #ffffff; padding: 10px 24px; border-radius: 20px; font-size: 14px; font-weight: bold; text-decoration: none;">Conhecer projeto ↗</a>
+                        </div>
+                        <img src="imagens/criadouro_logo.png" alt="Criadouro Onça Pintada" class="post-image" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">22 OUT • 10:24 AM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Comentar')" aria-label="Comentar">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post de Experiência -->
+                <div class="project-post fade-in">
+                    <div class="post-header">
+                        <div style="flex: 1;">
+                            <h3>Participação de Evento na Praia<br>Minha experiência com o Recicla Orla</h3>
+                            <div class="rating" aria-label="Avaliação 4 de 5">
+                                <img src="imagens/icones/favorite.png" alt="">
+                                <img src="imagens/icones/favorite.png" alt="">
+                                <img src="imagens/icones/favorite.png" alt="">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </div>
+                            <p style="color: #7f8c8d; font-size: 14px; margin-top: 10px;">O Recicla Orla coordena mutirões de limpeza e pontos de coleta ao longo da faixa de areia do Rio. Os voluntários recebem kit reutilizável, passam por uma trilha rápida de educação ambiental e encaminham todo o material coletado para cooperativas parceiras.</p>
+                            <p style="color: #7f8c8d; font-size: 14px; margin-top: 10px;">Além da ação prática, o projeto reúne banhistas e comerciantes para discutir descarte responsável e reduzir o lixo deixado nas praias. Foi uma experiência transformadora enxergar o impacto imediato da coleta seletiva na orla.</p>
+                        </div>
+                        <img src="imagens/voluntariadobeach.jpg" alt="Mutirão de limpeza no Voluntariado Beach" class="post-image" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">15 SET • 3:45 PM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Comentar')" aria-label="Comentar">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novo Projeto Cadastrado -->
+                <div class="project-post fade-in">
+                    <div class="post-header">
+                        <div style="flex: 1;">
+                            <h3>Novo Projeto Cadastrado!<br>Remar</h3>
+                            <div class="post-tags">
+                                <span class="tag">reciclagem</span>
+                                <span class="tag">impacto social</span>
+                            </div>
+                            <p style="color: #7f8c8d; font-size: 14px;">A Remar chegou à plataforma com uma rede de catadores que transforma toneladas de resíduos em renda e dignidade. Conheça o programa Guardiões da Praia, o projeto Jardineiras de Gramacho e as campanhas de capacitação para catadores em todo o país.</p>
+                            <a href="organizacao.html?projeto=remar" style="margin-top: 15px; display: inline-block; background-color: #ff8c42; color: #ffffff; padding: 10px 24px; border-radius: 20px; font-size: 14px; font-weight: bold; text-decoration: none;">Conhecer projeto ↗</a>
+                        </div>
+                        <img src="imagens/remar_logo.jpeg" alt="Remar" class="post-image" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">09 NOV • 09:05 AM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Comentar')" aria-label="Comentar">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destaque Comunidade -->
+                <div class="project-post fade-in">
+                    <div class="post-header">
+                        <div style="flex: 1;">
+                            <h3>Assinatura de Compostagem<br>Ciclo Orgânico</h3>
+                            <div class="post-tags">
+                                <span class="tag">compostagem</span>
+                                <span class="tag">RJ</span>
+                            </div>
+                            <p style="color: #7f8c8d; font-size: 14px;">Depois de três meses com o baldinho do Ciclo Orgânico, nossa comunidade já desviou 580 kg de resíduos orgânicos de aterros e devolveu o adubo para hortas urbanas do Rio de Janeiro. Assinaturas abertas com visita guiada ao pátio de compostagem.</p>
+                        </div>
+                        <img src="imagens/LucasCiclo.jpeg" alt="Visita ao Ciclo Orgânico" class="post-image" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">07 NOV • 05:42 PM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Comentar')" aria-label="Comentar">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentário - Juliana sobre Remar -->
+                <div class="project-post fade-in">
+                    <div class="post-header" style="align-items: center;">
+                        <div style="display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
+                                <img src="imagens/pessoas/pessoa7.jpg" alt="Juliana Martins" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h3 style="margin: 0 0 6px 0;">Juliana Martins comentou sobre Remar</h3>
+                                <div class="post-tags">
+                                    <span class="tag">comunidade</span>
+                                    <span class="tag">remar</span>
+                                </div>
+                                <p style="color: #2c3e50; font-size: 14px; margin-top: 10px;">“Vi os Guardiões da Praia em Copacabana. É muito bom quando a plataforma dá visibilidade aos catadores que cuidam da cidade.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">08 NOV • 07:12 PM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Responder')" aria-label="Responder">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novo Post Água Camelo -->
+                <div class="project-post fade-in">
+                    <div class="post-header">
+                        <div style="flex: 1;">
+                            <h3>Novo Projeto Cadastrado!<br>Água Camelo</h3>
+                            <div class="post-tags">
+                                <span class="tag">acesso à água</span>
+                                <span class="tag">Nordeste</span>
+                            </div>
+                            <p style="color: #7f8c8d; font-size: 14px;">O Água Camelo instala cisternas e tecnologias sociais em comunidades do semiárido. A cada assinatura corporativa, uma família recebe acompanhamento técnico, filtros de barro e educação para uso consciente da água.</p>
+                            <a href="organizacao.html?projeto=agua-camelo" style="margin-top: 15px; display: inline-block; background-color: #ff8c42; color: #ffffff; padding: 10px 24px; border-radius: 20px; font-size: 14px; font-weight: bold; text-decoration: none;">Conhecer projeto ↗</a>
+                        </div>
+                        <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" class="post-image" onclick="openImageModal(this.src, this.alt)">
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">03 NOV • 11:18 AM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Comentar')" aria-label="Comentar">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentário - Patrícia sobre Ciclo Orgânico -->
+                <div class="project-post fade-in">
+                    <div class="post-header" style="align-items: center;">
+                        <div style="display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
+                                <img src="imagens/pessoas/pessoa8.jpg" alt="Patrícia Duarte" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h3 style="margin: 0 0 6px 0;">Patrícia Duarte comentou sobre Ciclo Orgânico</h3>
+                                <div class="post-tags">
+                                    <span class="tag">compostagem</span>
+                                    <span class="tag">RJ</span>
+                                </div>
+                                <p style="color: #2c3e50; font-size: 14px; margin-top: 10px;">“Que bom ver o Ciclo Orgânico por aqui! Faço a assinatura há 3 meses e o adubo volta para minha horta. Atendimento impecável.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">05 NOV • 06:30 PM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Responder')" aria-label="Responder">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentário - Larissa e Bruno sobre Onça-Pintada -->
+                <div class="project-post fade-in">
+                    <div class="post-header" style="align-items: center;">
+                        <div style="display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
+                                <img src="imagens/pessoas/pessoa9.jpg" alt="Larissa Prado" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <h3 style="margin: 0 0 6px 0;">Larissa Prado comentou sobre Instituto Onça-Pintada</h3>
+                                <div class="post-tags">
+                                    <span class="tag">fauna</span>
+                                    <span class="tag">voluntariado</span>
+                                </div>
+                                <p style="color: #2c3e50; font-size: 14px; margin-top: 10px;">“Melhor voluntariado da minha vida! As vivências em campo e a equipe do instituto são incríveis. Recomendo demais.”</p>
+                                <div style="margin-top: 12px; padding-left: 15px; border-left: 3px solid #ff8c42; display: flex; gap: 12px;">
+                                    <div style="width: 48px; height: 48px; border-radius: 50%; overflow: hidden; flex-shrink: 0;">
+                                        <img src="imagens/pessoas/pessoa8.jpg" alt="Bruno Amaral" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div>
+                                        <strong style="color: #2c3e50; font-size: 14px;">Bruno Amaral respondeu</strong>
+                                        <p style="color: #2c3e50; font-size: 13px; margin-top: 4px;">“Também já participei das imersões. Ver o felino de perto e apoiar a pesquisa mudou minha relação com a conservação.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-footer">
+                        <span class="post-time">02 NOV • 02:15 PM</span>
+                        <div class="post-actions">
+                            <button class="icon-button" onclick="likePost(this)" aria-label="Curtir">
+                                <img src="imagens/icones/favorite.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Responder')" aria-label="Responder">
+                                <img src="imagens/icones/chat_bubble.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                                <img src="imagens/icones/send.png" alt="">
+                            </button>
+                            <button class="icon-button" onclick="showAlert('Salvar')" aria-label="Salvar">
+                                <img src="imagens/icones/Bookmark.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div>
+                <!-- Missões Diárias -->
+                <div class="missions-card">
+                    <div class="mission-title">
+                        <img src="imagens/icones/Calendar.png" alt="" class="icon icon--small">
+                        <span>missões diárias</span>
+                    </div>
+                    <div class="mission-item">
+                        <div style="display: flex; align-items: center;">
+                            <input type="checkbox" id="mission1" onchange="completeMission(this)">
+                            <label for="mission1">Se conecte a um projeto</label>
+                        </div>
+                        <span class="mission-badge">+5</span>
+                    </div>
+                    <div class="mission-item">
+                        <div style="display: flex; align-items: center;">
+                            <input type="checkbox" id="mission2" onchange="completeMission(this)">
+                            <label for="mission2">Compartilhe uma ideia!</label>
+                        </div>
+                        <span class="mission-badge">+5</span>
+                    </div>
+                    <div class="mission-item">
+                        <div style="display: flex; align-items: center;">
+                            <input type="checkbox" id="mission3" onchange="completeMission(this)">
+                            <label for="mission3">Curta o post de um amigo</label>
+                        </div>
+                        <span class="mission-badge">+5</span>
+                    </div>
+                </div>
+
+                <!-- Destaques -->
+                <div class="highlights-section">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">DESTAQUES</h3>
+                    <div class="section-tabs">
+                        <button class="tab-btn active" onclick="changeTab('mais')">MAIS</button>
+                        <button class="tab-btn" onclick="changeTab('recente')">RECENTE</button>
+                        <button class="tab-btn" onclick="changeTab('mundial')">MUNDIAL</button>
+                    </div>
+
+                    <div id="highlightsContent">
+                        <div class="project-highlight" onclick="window.location.href='organizacao.html?projeto=remar'">
+                            <div class="project-info">
+                                <img src="imagens/remar_logo.jpeg" alt="Remar" class="project-img">
+                                <div>
+                                    <strong>Remar</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d;">Rio de Janeiro • Reciclagem</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-highlight" onclick="window.location.href='organizacao.html?projeto=ciclo-organico'">
+                            <div class="project-info">
+                                <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" class="project-img">
+                                <div>
+                                    <strong>Ciclo Orgânico</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d;">Rio de Janeiro • Compostagem</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-highlight" onclick="window.location.href='organizacao.html?projeto=onca-pintada'">
+                            <div class="project-info">
+                                <img src="imagens/criadouro_logo.png" alt="Instituto Onça-Pintada" class="project-img">
+                                <div>
+                                    <strong>Instituto Onça-Pintada</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d;">Mineiros, GO • Conservação</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-highlight" onclick="window.location.href='organizacao.html?projeto=agua-camelo'">
+                            <div class="project-info">
+                                <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" class="project-img">
+                                <div>
+                                    <strong>Água Camelo</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d;">Alagoas • Acesso à água</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-highlight" onclick="window.location.href='organizacao.html?projeto=recicla-orla'">
+                            <div class="project-info">
+                                <img src="imagens/reciclaorla_logo.png" alt="Recicla Orla" class="project-img">
+                                <div>
+                                    <strong>Recicla Orla</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d;">Rio de Janeiro • Praias</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" class="image-modal-content" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
+                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
