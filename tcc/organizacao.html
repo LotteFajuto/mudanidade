@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Projeto - Muda.nidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <ul class="nav-links">
+            <li><a href="projetos.html">projetos</a></li>
+            <li><a href="voluntariado.html">voluntariado</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header do Perfil da Organização -->
+        <div class="org-profile-header">
+            <div class="org-info-top">
+                <div class="org-logo">
+                    <img id="orgLogo" src="imagens/bemreciclagem_logo.jpeg" alt="Logo do Projeto">
+                </div>
+                
+                <div class="org-details" style="flex: 1;">
+                    <h1 id="orgName">Bem Reciclagem</h1>
+                    <p class="org-handle" id="orgHandle">@bemreciclagem • Rio de Janeiro, RJ</p>
+                    
+                    <div class="org-stats" id="orgStats">
+                    </div>
+                    
+                    <div class="org-tags-list" id="orgTags">
+                        <span class="org-tag">reciclagem</span>
+                        <span class="org-tag">sustentabilidade</span>
+                        <span class="org-tag">meio ambiente</span>
+                    </div>
+                </div>
+                
+                <div class="org-actions" style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+                    <div style="display: flex; gap: 10px;">
+                        <button class="action-btn icon-button" onclick="showAlert('Seguir projeto')" aria-label="Seguir projeto">
+                            <img src="imagens/icones/favorite.png" alt="">
+                        </button>
+                        <button class="action-btn icon-button" onclick="showAlert('Compartilhar')" aria-label="Compartilhar">
+                            <img src="imagens/icones/send.png" alt="">
+                        </button>
+                        <button class="action-btn icon-button" onclick="showAlert('Mensagem')" aria-label="Enviar mensagem">
+                            <img src="imagens/icones/chat_bubble.png" alt="">
+                        </button>
+                    </div>
+                    <a href="#" id="orgSiteLink" class="site-badge" style="display: inline-block; text-decoration: none; margin-top: 10px;" target="_blank">SITE OFICIAL ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout Principal (estilo Facebook) -->
+        <div style="display: grid; grid-template-columns: 300px 1fr; gap: 20px; margin-top: 20px;">
+            <!-- Coluna Esquerda: Informações -->
+            <div>
+                <!-- Sobre -->
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 25px; margin-bottom: 20px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px; font-family: 'Josefin Slab', serif;">Sobre</h3>
+                    <p id="orgDescription" style="color: #2c3e50; font-size: 14px; line-height: 1.6; margin-bottom: 15px;">
+                        No coração do Rio de Janeiro, a Bem Reciclagem nasceu com um propósito: garantir a destinação correta de livros, papéis e documentos confidenciais, unindo sustentabilidade e segurança da informação. Fundada em 2017, somos referência na reciclagem de livros, papéis e destruição segura de documentos confidenciais, trabalhando sob rigorosos padrões de segurança em conformidade com a LGPD e a Política Nacional de Resíduos Sólidos.
+                    </p>
+                    
+                    <div style="margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                            <img src="imagens/icones/Folder.png" alt="" class="icon icon--small">
+                            <span id="orgLocation" style="color: #2c3e50; font-size: 14px;">Rio de Janeiro, RJ, Brasil</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                            <img src="imagens/icones/Paperclip.png" alt="" class="icon icon--small">
+                            <a href="#" id="orgSite" style="color: #ff8c42; font-size: 14px; text-decoration: none;">bemreciclagem.com</a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <img src="imagens/icones/Calendar.png" alt="" class="icon icon--small">
+                            <span id="orgFounded" style="color: #2c3e50; font-size: 14px;">Ativo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estatísticas -->
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 25px; margin-bottom: 20px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px; font-family: 'Josefin Slab', serif;">Impacto</h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #7f8c8d; font-size: 14px;">Voluntários ativos</span>
+                            <span style="color: #2c3e50; font-weight: bold; font-size: 16px;">120</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #7f8c8d; font-size: 14px;">Toneladas recicladas</span>
+                            <span style="color: #2c3e50; font-weight: bold; font-size: 16px;">15.000+</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: #7f8c8d; font-size: 14px;">Comunidades alcançadas</span>
+                            <span style="color: #2c3e50; font-weight: bold; font-size: 16px;">45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fotos -->
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 25px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 18px; font-family: 'Josefin Slab', serif;">Fotos</h3>
+                    <div id="photosGrid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+                    </div>
+                    <button onclick="showAlert('Ver todas as fotos')" style="margin-top: 15px; width: 100%; padding: 10px; background-color: white; border: 2px solid #ff8c42; color: #ff8c42; border-radius: 15px; cursor: pointer; font-weight: bold;">Ver todas as fotos</button>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Feed/Timeline -->
+            <div>
+                <!-- Criar Post (se usuário logado) -->
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 25px; margin-bottom: 20px;">
+                    <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background-color: white; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="imagens/pessoas/pessoa1.jpg" alt="Usuário" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <input type="text" placeholder="Escreva algo sobre este projeto..." style="flex: 1; padding: 12px 18px; border: none; border-radius: 25px; font-size: 14px; background-color: white;" onclick="showAlert('Funcionalidade de post em desenvolvimento')">
+                    </div>
+                    <div style="display: flex; gap: 20px; padding-top: 15px; border-top: 1px solid #ddd;">
+                        <button onclick="showAlert('Adicionar foto')" style="flex: 1; padding: 10px; background: none; border: none; cursor: pointer; color: #7f8c8d; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <img src="imagens/icones/Camera.png" alt="" class="icon icon--small">
+                            <span>Foto</span>
+                        </button>
+                        <button onclick="showAlert('Adicionar evento')" style="flex: 1; padding: 10px; background: none; border: none; cursor: pointer; color: #7f8c8d; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <img src="imagens/icones/Calendar.png" alt="" class="icon icon--small">
+                            <span>Evento</span>
+                        </button>
+                        <button onclick="showAlert('Escrever artigo')" style="flex: 1; padding: 10px; background: none; border: none; cursor: pointer; color: #7f8c8d; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <img src="imagens/icones/edit.png" alt="" class="icon icon--small">
+                            <span>Artigo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="postsContainer" style="display: flex; flex-direction: column; gap: 20px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" class="image-modal-content" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
+                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+            const projects = {
+                'bem-reciclagem': {
+                    name: 'Bem Reciclagem',
+                    logo: 'imagens/bemreciclagem_logo.jpeg',
+                    handle: '@bemreciclagem',
+                    location: 'Rio de Janeiro, RJ',
+                    locationFull: 'Rio de Janeiro, RJ — Brasil',
+                    description: 'No coração do Rio de Janeiro, a Bem Reciclagem nasceu com um propósito: garantir a destinação correta de livros, papéis e documentos confidenciais, unindo sustentabilidade e segurança da informação. Fundada em 2017, somos referência na reciclagem de livros, papéis e destruição segura de documentos confidenciais, trabalhando sob rigorosos padrões de segurança em conformidade com a LGPD e a Política Nacional de Resíduos Sólidos.',
+                    tags: ['reciclagem', 'sustentabilidade', 'meio ambiente'],
+                    site: 'bemreciclagem.com',
+                    siteUrl: 'https://bemreciclagem.com/',
+                founded: 'Fundada em 2017',
+                stats: [
+                    { label: 'seguidores', value: '1.234' },
+                    { label: 'clientes atendidos', value: '567' },
+                    { label: 'toneladas recicladas', value: '15.000+' }
+                ],
+                gallery: [
+                    { src: 'imagens/bemreciclagemfoto.jpg', alt: 'Equipe Bem Reciclagem em ação' },
+                    { src: 'imagens/background.png', alt: 'Centro de triagem da Bem Reciclagem' },
+                    { src: 'imagens/voluntariadobeach.jpg', alt: 'Voluntariado da Bem Reciclagem' }
+                ],
+                posts: [
+                    {
+                        author: 'Bem Reciclagem',
+                        authorAvatar: 'imagens/bemreciclagem_logo.jpeg',
+                        time: 'há alguns meses',
+                        title: 'Bem Reciclagem – Segurança, Sustentabilidade e Compromisso com o Futuro',
+                        paragraphs: [
+                            'No coração do Rio de Janeiro, onde histórias ganham vida e o conhecimento circula, a Bem Reciclagem nasceu com um propósito: garantir a destinação correta de livros, papéis e documentos confidenciais, unindo sustentabilidade e segurança da informação.',
+                            'Fundada em 2017, nossa jornada começou com uma inquietação – toneladas de livros, documentos e papéis descartados sem qualquer reaproveitamento. Vimos valor onde muitos viam descarte e decidimos agir.',
+                            'Nosso compromisso vai além da reciclagem. Trabalhamos sob rigorosos padrões de segurança, garantindo a destruição confidencial de documentos em conformidade com a LGPD e a Política Nacional de Resíduos Sólidos.'
+                        ],
+                        media: [
+                            { src: 'imagens/bemreciclagemfoto.jpg', alt: 'Bem Reciclagem em ação' }
+                        ],
+                        reactions: { icon: 'Thumbs%20up.png', alt: 'Curtidas', count: '234' }
+                    },
+                    {
+                        author: 'Bem Reciclagem',
+                        authorAvatar: 'imagens/bemreciclagem_logo.jpeg',
+                        time: '1 semana atrás',
+                        title: 'Vagas abertas para voluntários',
+                        paragraphs: [
+                            'Estamos abrindo novas vagas para voluntários! Se você se preocupa com o meio ambiente e quer fazer a diferença, venha fazer parte da nossa equipe. Inscrições abertas para multiplicar impacto!'
+                        ],
+                        reactions: { icon: 'favorite.png', alt: 'Apoios', count: '89' }
+                    },
+                    {
+                        author: 'Luiza Mel',
+                        authorAvatar: 'imagens/pessoas/pessoa7.jpg',
+                        subtitle: 'compartilhou',
+                        time: '2 semanas atrás',
+                        title: 'Experiência que transforma',
+                        paragraphs: [
+                            'Adorei participar da última ação do Bem Reciclagem! A experiência foi incrível e aprendi muito sobre como podemos fazer a diferença. Recomendo para todos com nota máxima!'
+                        ],
+                        reactions: { icon: 'Thumbs%20up.png', alt: 'Curtidas', count: '45' }
+                    }
+                ]
+                },
+                'ciclo-organico': {
+                    name: 'Ciclo Orgânico',
+                    logo: 'imagens/cicloorganico_logo.png',
+                    handle: '@cicloorganico',
+                    location: 'Rio de Janeiro, RJ',
+                    locationFull: 'Rio de Janeiro, RJ — Brasil',
+                description: 'O Ciclo Orgânico é um empreendimento social sediado no Rio de Janeiro, que oferece serviço de assinatura de coleta e compostagem de resíduos orgânicos domésticos, transformando esse material em adubo e reduzindo impactos ambientais. Somos um negócio social que coleta e transforma o seu lixo orgânico em fonte de vida!',
+                    tags: ['compostagem', 'resíduos orgânicos', 'RJ'],
+                    site: 'cicloorganico.com.br',
+                    siteUrl: 'https://cicloorganico.com.br/',
+                founded: 'Fundado em 2015',
+                stats: [
+                    { label: 'seguidores', value: '3.820' },
+                    { label: 'assinaturas ativas', value: '1.480' },
+                    { label: 'toneladas compostadas', value: '62' }
+                ],
+                gallery: [
+                    { src: 'imagens/LucasCiclo.jpeg', alt: 'Visita guiada ao pátio de compostagem' },
+                    { src: 'imagens/galeria1ciclo.png', alt: 'Tabela de alimentos compostáveis' },
+                    { src: 'imagens/galeria2ciclo.jpg', alt: 'Itens orgânicos prontos para compostagem' },
+                    { src: 'imagens/ciclofoto.jpg', alt: 'Equipe do Ciclo Orgânico' }
+                ],
+                posts: [
+                    {
+                        author: 'Ciclo Orgânico',
+                        authorAvatar: 'imagens/cicloorganico_logo.png',
+                        time: '3 dias atrás',
+                        title: 'Visita guiada ao nosso pátio de compostagem',
+                        paragraphs: [
+                            'Passamos a manhã acompanhando cada etapa da transformação dos resíduos dos assinantes em adubo fresquinho. Nada se perde, tudo vira vida nova para hortas e jardins.',
+                            'Fui com eles ver como funciona todo o processo de compostagem deles! É incrível!'
+                        ],
+                        media: [
+                            { src: 'imagens/LucasCiclo.jpeg', alt: 'Lucas acompanhando o processo de compostagem' }
+                        ],
+                        reactions: { icon: 'Settings.png', alt: 'Impacto gerado', count: '612' },
+                        comments: [
+                            {
+                                author: 'Patrícia Duarte',
+                                avatar: 'imagens/pessoas/pessoa8.jpg',
+                                time: 'há 1 dia',
+                                text: 'Que bom que esse projeto entrou aqui!! Já faço a assinatura há 3 meses e recomendo demais!'
+                            }
+                        ]
+                    },
+                    {
+                        author: 'Ciclo Orgânico',
+                        authorAvatar: 'imagens/cicloorganico_logo.png',
+                        time: '5 dias atrás',
+                        title: 'Tabela rápida: alimentos compostáveis',
+                        paragraphs: [
+                            'Você já sabe quais são os alimentos compostáveis? Fica ligado na tabela!',
+                            'Salve este post e compartilhe com quem ainda tem dúvidas sobre o que colocar no baldinho.'
+                        ],
+                        media: [
+                            { src: 'imagens/galeria1ciclo.png', alt: 'Lista de alimentos compostáveis' },
+                            { src: 'imagens/galeria2ciclo.jpg', alt: 'Exemplos de resíduos orgânicos' }
+                        ],
+                        reactions: { icon: 'Book.png', alt: 'Relatórios salvos', count: '421' }
+                    }
+                ]
+                },
+                'remar': {
+                name: 'Remar',
+                    logo: 'imagens/remar_logo.jpeg',
+                handle: '@remar',
+                location: 'Rio de Janeiro, RJ',
+                description: 'A Remar alia a gestão de resíduos à geração de impacto social, promovendo a reciclagem como meio de sustentabilidade ambiental e geração de recursos para programas de assistência e fortalecimento de catadores.',
+                    tags: ['reciclagem', 'sustentabilidade', 'impacto social'],
+                site: 'remar.org.br',
+                siteUrl: 'https://remar.org.br/',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '4.970' },
+                    { label: 'catadores apoiados', value: '820' },
+                    { label: 'toneladas recicladas', value: '38.000' }
+                ],
+                gallery: [
+                    { src: 'imagens/guardioesremar.png', alt: 'Guardiões da Praia em ação' },
+                    { src: 'imagens/caminhoremar.png', alt: 'Logística da Remar' },
+                    { src: 'imagens/gramachoremar.png', alt: 'Jardineiras de Gramacho' },
+                    { src: 'imagens/dadosremar.png', alt: 'Infográfico sobre reciclagem no Brasil' },
+                    { src: 'imagens/camisaremar.png', alt: 'Camiseta oficial Remar' }
+                ],
+                posts: [
+                    {
+                        author: 'Remar Brasil',
+                        authorAvatar: 'imagens/remar_logo.jpeg',
+                        time: '1 dia atrás',
+                        title: 'Guardiões da Praia em ação',
+                        mediaSize: 'small',
+                        paragraphs: [
+                            'Estamos levando a reciclagem às praias, realizando limpezas diárias e promovendo a conscientização ambiental. O trabalho contínuo tem impacto real na preservação da natureza e na educação da comunidade.',
+                            'Projeto Novos Caminhos: trazemos novas experiências e capacitações para catadores e familiares, criando um futuro de oportunidades. Aqui, cada aprendizado é um passo em direção à dignidade e ao empoderamento.',
+                            'Jardineiras de Gramacho: apoiamos moradoras de Jardim Gramacho na geração de renda por meio da coleta e compra de recicláveis em domicílio, facilitando para que qualquer morador transforme resíduos em renda, gerando impacto ambiental e social.'
+                        ],
+                        media: [
+                            { src: 'imagens/guardioesremar.png', alt: 'Equipe Guardiões da Praia' },
+                            { src: 'imagens/caminhosremar.png', alt: 'Caminhão da Remar' },
+                            { src: 'imagens/gramachoremar.png', alt: 'Jardineiras de Gramacho em atividade' }
+                        ],
+                        reactions: { icon: 'Send.png', alt: 'Compartilhamentos', count: '1.240' },
+                        comments: [
+                            {
+                                author: 'Juliana Martins',
+                                avatar: 'imagens/pessoas/pessoa9.jpg',
+                                time: 'há 5 horas',
+                                text: 'Vi eles em Copacabana! Muito legal darem visualização para esses trabalhadores informais, que muitas vezes não são valorizados pela nossa sociedade.'
+                            }
+                        ]
+                    },
+                    {
+                        author: 'Remar Brasil',
+                        authorAvatar: 'imagens/remar_logo.jpeg',
+                        time: '3 dias atrás',
+                        title: 'Heróis Invisíveis da Reciclagem',
+                        layout: 'side-by-side',
+                        paragraphs: [
+                            '90% dos materiais reciclados no Brasil passam pelas mãos dos catadores.',
+                            'Você sabia que cerca de 90% de todo o material reciclado no Brasil é coletado por catadores? Em um cenário onde apenas 4% dos 82 milhões de toneladas de lixo gerado anualmente são reaproveitados, esses profissionais se destacam como verdadeiros agentes de mudança.',
+                            'Os catadores atuam diariamente em áreas urbanas e periféricas, recolhendo e separando resíduos que, de outra forma, acabariam em lixões e aterros sanitários. Reciclar uma única lata de alumínio pode economizar até 95% da energia necessária para fabricar uma nova.'
+                        ],
+                        media: [
+                            { src: 'imagens/dadosremar.png', alt: 'Infográfico sobre catadores no Brasil' }
+                        ],
+                        reactions: { icon: 'User%20check.png', alt: 'Reciclagem apoiada', count: '980' }
+                    },
+                    {
+                        author: 'Remar Brasil',
+                        authorAvatar: 'imagens/remar_logo.jpeg',
+                        time: '6 dias atrás',
+                        title: 'Camisetas que orgulham nossos catadores',
+                        mediaSize: 'small',
+                        paragraphs: [
+                            'Apresentamos os novos uniformes da rede Remar! As camisetas foram co-criadas com os catadores para valorizar a profissão e reforçar a mensagem de orgulho e pertencimento.',
+                            'Cada peça acompanha um QR Code que conta a história de quem está por trás da coleta seletiva da sua cidade.'
+                        ],
+                        media: [
+                            { src: 'imagens/camisaremar.png', alt: 'Nova camiseta Remar' }
+                        ],
+                        reactions: { icon: 'favorite.png', alt: 'Apoios', count: '432' }
+                    }
+                ]
+                },
+                'onca-pintada': {
+                    name: 'Instituto Onça-Pintada',
+                    logo: 'imagens/criadouro_logo.png',
+                    handle: '@institutooncapintada',
+                    location: 'Mineiros, GO',
+                    locationFull: 'Zona rural de Mineiros – GO, Brasil',
+                description: 'O Instituto Onça-Pintada é uma ONG brasileira dedicada à conservação do maior felino das Américas, atuando cientificamente em diversos biomas, desenvolvendo pesquisa, manejo, educação ambiental e articulação comunitária.',
+                    tags: ['fauna', 'conservação', 'biodiversidade'],
+                    site: 'institutooncapintada.org.br',
+                    siteUrl: 'https://institutooncapintada.org.br/',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '5.420' },
+                    { label: 'voluntários certificados', value: '320' },
+                    { label: 'animais monitorados', value: '67' }
+                ],
+                gallery: [
+                    { src: 'imagens/background.png', alt: 'Equipe em campo' },
+                    { src: 'imagens/criadouro_logo.png', alt: 'Marca Instituto Onça-Pintada' }
+                ],
+                posts: [
+                    {
+                        author: 'Instituto Onça-Pintada',
+                        authorAvatar: 'imagens/criadouro_logo.png',
+                        time: '2 semanas atrás',
+                        title: 'Vivência no Instituto Onça-Pintada',
+                        paragraphs: [
+                            'Nossos voluntários acompanham pesquisadores em campo, aprendendo sobre manejo responsável, monitoramento da fauna e ações de educação ambiental para comunidades vizinhas.',
+                            'Cada imersão inclui trilhas, oficinas e contato direto com iniciativas que protegem a onça-pintada e garantem a saúde dos biomas onde ela vive.'
+                        ],
+                        reactions: { icon: 'User%20check.png', alt: 'Observações de fauna', count: '768' },
+                        comments: [
+                            {
+                                author: 'Larissa Prado',
+                                avatar: 'imagens/pessoas/pessoa7.jpg',
+                                time: 'há 3 dias',
+                                text: 'Genteee! Foi o melhor voluntariado da minha vida. Super recomendo, foi muito incrível.',
+                                replies: [
+                                    {
+                                        author: 'Bruno Amaral',
+                                        avatar: 'imagens/pessoas/pessoa8.jpg',
+                                        time: 'há 2 dias',
+                                        text: 'Eu também fui, nunca tinha visto uma onça de perto. Também aprendi demais lá.'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+                },
+                'lontra': {
+                    name: 'Projeto Lontra',
+                    logo: 'imagens/lontra_logo.jpg',
+                    handle: '@projetolontra',
+                    location: 'Florianópolis, SC',
+                    locationFull: 'Florianópolis, Santa Catarina — Brasil',
+                description: 'O Projeto Lontra integra pesquisa, refúgio animal, educação e engajamento comunitário para proteger a lontra neotropical e outros mustelídeos brasileiros.',
+                    tags: ['fauna', 'conservação', 'SC'],
+                    site: 'projetolontra.com',
+                    siteUrl: 'https://www.projetolontra.com/',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '2.310' },
+                    { label: 'lontras resgatadas', value: '54' },
+                    { label: 'voluntários ativos', value: '120' }
+                ],
+                gallery: [
+                    { src: 'imagens/background.png', alt: 'Voluntários do Projeto Lontra' }
+                ],
+                posts: []
+                },
+                'recicla-orla': {
+                    name: 'Recicla Orla',
+                    logo: 'imagens/reciclaorla_logo.png',
+                    handle: '@reciclaorla',
+                    location: 'Rio de Janeiro, RJ',
+                    locationFull: 'Rio de Janeiro, RJ — Brasil',
+                description: 'O Recicla Orla instala e opera pontos de coleta seletiva ao longo da orla do Rio de Janeiro, conectando frequentadores, quiosques e moradores ao ciclo de reciclagem.',
+                    tags: ['reciclagem', 'praias', 'RJ'],
+                    site: 'reciclaorla.com.br',
+                    siteUrl: 'https://www.reciclaorla.com.br/',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '2.780' },
+                    { label: 'pontos de coleta', value: '43' },
+                    { label: 'toneladas desviadas', value: '19.5' }
+                ],
+                gallery: [
+                    { src: 'imagens/background.png', alt: 'Ponto de coleta na praia' }
+                ],
+                posts: []
+                },
+                'agua-camelo': {
+                    name: 'Água Camelo',
+                    logo: 'imagens/aguacamelo_logo.jpeg',
+                    handle: '@aguacamelo',
+                    location: 'Alagoas',
+                    locationFull: 'Alagoas, Brasil',
+                description: 'Projeto dedicado à conservação e gestão de recursos hídricos para garantir acesso a água de qualidade em comunidades vulneráveis.',
+                    tags: ['água', 'conservação', 'AL'],
+                site: 'aguacamelo.org',
+                    siteUrl: '#',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '980' },
+                    { label: 'famílias atendidas', value: '210' },
+                    { label: 'cisternas instaladas', value: '36' }
+                ],
+                gallery: [
+                    { src: 'imagens/background.png', alt: 'Equipe Água Camelo em campo' }
+                ],
+                posts: []
+                },
+                'terreiro': {
+                    name: 'Terreiro do Carmo',
+                    logo: 'imagens/terreiro_logo.webp',
+                    handle: '@terreirodocarmo',
+                    location: 'Rio de Janeiro, RJ',
+                    locationFull: 'Rio de Janeiro, RJ — Brasil',
+                description: 'Projeto cultural e social dedicado à preservação de tradições e cultura afro-brasileira, criando oportunidades para a comunidade.',
+                    tags: ['cultura', 'tradição', 'RJ'],
+                site: 'terreirodocarmo.org',
+                    siteUrl: '#',
+                founded: 'Ativo',
+                stats: [
+                    { label: 'seguidores', value: '1.560' },
+                    { label: 'festas tradicionais', value: '27' },
+                    { label: 'oficinas culturais', value: '58' }
+                ],
+                gallery: [
+                    { src: 'imagens/background.png', alt: 'Celebração cultural' }
+                ],
+                posts: []
+            }
+        };
+
+        function renderStats(stats) {
+            const statsContainer = document.getElementById('orgStats');
+            if (!statsContainer) return;
+            statsContainer.innerHTML = '';
+            const items = stats && stats.length ? stats : [
+                { label: 'seguidores', value: '0' },
+                { label: 'conexões', value: '0' },
+                { label: 'impactos', value: '0' }
+            ];
+
+            items.forEach(stat => {
+                const span = document.createElement('span');
+                span.style.color = 'white';
+                span.style.fontSize = '14px';
+                span.innerHTML = `<strong>${stat.value}</strong> ${stat.label}`;
+                statsContainer.appendChild(span);
+            });
+        }
+
+        function renderGallery(gallery) {
+            const photosGrid = document.getElementById('photosGrid');
+            if (!photosGrid) return;
+            photosGrid.innerHTML = '';
+            const items = gallery && gallery.length ? gallery : [
+                { src: 'imagens/background.png', alt: 'Registro do projeto' }
+            ];
+
+            items.slice(0, 6).forEach(item => {
+                const photo = document.createElement('img');
+                const source = typeof item === 'string' ? item : item.src;
+                const alt = typeof item === 'string' ? 'Foto do projeto' : (item.alt || 'Foto do projeto');
+                photo.src = source;
+                photo.alt = alt;
+                photo.style.width = '100%';
+                photo.style.aspectRatio = '1';
+                photo.style.objectFit = 'cover';
+                photo.style.borderRadius = '10px';
+                photo.style.cursor = 'pointer';
+                photo.addEventListener('click', () => openImageModal(source, alt));
+                photosGrid.appendChild(photo);
+            });
+        }
+
+        function createCommentElement(comment, isReply = false) {
+            const fragment = document.createDocumentFragment();
+
+            const wrapper = document.createElement('div');
+            wrapper.style.display = 'flex';
+            wrapper.style.gap = '10px';
+            wrapper.style.marginBottom = '12px';
+            if (isReply) {
+                wrapper.style.marginLeft = '50px';
+            }
+
+            const avatarWrapper = document.createElement('div');
+            const avatarSize = isReply ? '32px' : '40px';
+            avatarWrapper.style.width = avatarSize;
+            avatarWrapper.style.height = avatarSize;
+            avatarWrapper.style.borderRadius = '50%';
+            avatarWrapper.style.overflow = 'hidden';
+            avatarWrapper.style.flexShrink = '0';
+            avatarWrapper.style.backgroundColor = '#fff';
+
+            if (comment.avatar) {
+                const avatar = document.createElement('img');
+                avatar.src = comment.avatar;
+                avatar.alt = comment.author || 'Usuário';
+                avatar.style.width = '100%';
+                avatar.style.height = '100%';
+                avatar.style.objectFit = 'cover';
+                avatarWrapper.appendChild(avatar);
+            } else {
+                avatarWrapper.style.display = 'none';
+            }
+
+            const body = document.createElement('div');
+            body.style.backgroundColor = '#f6f8fa';
+            body.style.borderRadius = '15px';
+            body.style.padding = '12px 16px';
+            body.style.color = '#2c3e50';
+            body.style.flex = '1';
+
+            const author = document.createElement('strong');
+            author.textContent = comment.author || 'Usuário';
+            author.style.display = 'block';
+            author.style.fontSize = '13px';
+            author.style.marginBottom = '2px';
+            body.appendChild(author);
+
+            if (comment.time) {
+                const time = document.createElement('span');
+                time.textContent = comment.time;
+                time.style.display = 'block';
+                time.style.fontSize = '11px';
+                time.style.color = '#7f8c8d';
+                time.style.marginBottom = '6px';
+                body.appendChild(time);
+            }
+
+            const text = document.createElement('p');
+            text.textContent = comment.text;
+            text.style.margin = '0';
+            text.style.fontSize = '14px';
+            text.style.lineHeight = '1.5';
+            body.appendChild(text);
+
+            wrapper.appendChild(avatarWrapper);
+            wrapper.appendChild(body);
+            fragment.appendChild(wrapper);
+
+            if (comment.replies && comment.replies.length) {
+                comment.replies.forEach(reply => {
+                    fragment.appendChild(createCommentElement(reply, true));
+                });
+            }
+
+            return fragment;
+        }
+
+        function appendComments(parent, comments) {
+            if (!comments || !comments.length) return;
+            const commentsWrapper = document.createElement('div');
+            commentsWrapper.style.marginTop = '20px';
+            commentsWrapper.style.borderTop = '1px solid #dfe4ea';
+            commentsWrapper.style.paddingTop = '15px';
+
+            const title = document.createElement('p');
+            title.textContent = 'Comentários';
+            title.style.margin = '0 0 15px 0';
+            title.style.color = '#2c3e50';
+            title.style.fontWeight = 'bold';
+            commentsWrapper.appendChild(title);
+
+            comments.forEach(comment => {
+                commentsWrapper.appendChild(createCommentElement(comment));
+            });
+
+            parent.appendChild(commentsWrapper);
+        }
+
+        function renderPosts(project) {
+            const postsContainer = document.getElementById('postsContainer');
+            if (!postsContainer) return;
+            postsContainer.innerHTML = '';
+
+            const posts = project.posts && project.posts.length ? project.posts : [];
+
+            if (!posts.length) {
+                const emptyState = document.createElement('div');
+                emptyState.style.backgroundColor = '#ecf0f1';
+                emptyState.style.borderRadius = '20px';
+                emptyState.style.padding = '25px';
+                const message = document.createElement('p');
+                message.textContent = 'Ainda não há publicações para este projeto.';
+                message.style.margin = '0';
+                message.style.color = '#7f8c8d';
+                message.style.fontSize = '14px';
+                emptyState.appendChild(message);
+                postsContainer.appendChild(emptyState);
+                return;
+            }
+
+            posts.forEach(post => {
+                const postDiv = document.createElement('div');
+                postDiv.className = 'project-post fade-in';
+
+                const header = document.createElement('div');
+                header.style.display = 'flex';
+                header.style.gap = '15px';
+                header.style.alignItems = 'center';
+                header.style.marginBottom = '15px';
+
+                const avatarWrapper = document.createElement('div');
+                avatarWrapper.style.width = '50px';
+                avatarWrapper.style.height = '50px';
+                avatarWrapper.style.borderRadius = '50%';
+                avatarWrapper.style.overflow = 'hidden';
+                avatarWrapper.style.backgroundColor = '#fff';
+                const avatar = document.createElement('img');
+                avatar.src = post.authorAvatar || project.logo;
+                avatar.alt = post.author || project.name;
+                avatar.style.width = '100%';
+                avatar.style.height = '100%';
+                avatar.style.objectFit = 'cover';
+                avatarWrapper.appendChild(avatar);
+
+                const headerInfo = document.createElement('div');
+
+                const author = document.createElement('h4');
+                author.textContent = post.author || project.name;
+                author.style.color = '#2c3e50';
+                author.style.fontSize = '16px';
+                author.style.fontWeight = 'bold';
+                author.style.margin = '0';
+                headerInfo.appendChild(author);
+
+                if (post.subtitle) {
+                    const subtitle = document.createElement('span');
+                    subtitle.textContent = post.subtitle;
+                    subtitle.style.display = 'block';
+                    subtitle.style.fontSize = '12px';
+                    subtitle.style.color = '#7f8c8d';
+                    subtitle.style.marginTop = '2px';
+                    headerInfo.appendChild(subtitle);
+                }
+
+                if (post.time) {
+                    const time = document.createElement('p');
+                    time.textContent = post.time;
+                    time.style.color = '#7f8c8d';
+                    time.style.fontSize = '12px';
+                    time.style.margin = '2px 0 0 0';
+                    headerInfo.appendChild(time);
+                }
+
+                header.appendChild(avatarWrapper);
+                header.appendChild(headerInfo);
+                postDiv.appendChild(header);
+
+                if (post.title) {
+                    const title = document.createElement('h3');
+                    title.textContent = post.title;
+                    title.style.color = '#2c3e50';
+                    title.style.fontSize = '20px';
+                    title.style.fontWeight = 'bold';
+                    title.style.marginBottom = '12px';
+                    title.style.fontFamily = "'Josefin Slab', serif";
+                    postDiv.appendChild(title);
+                }
+
+                const isSideBySide = post.layout === 'side-by-side' && post.media && post.media.length;
+
+                let paragraphsContainer = postDiv;
+                let mediaParent = postDiv;
+
+                if (isSideBySide) {
+                    const sideWrapper = document.createElement('div');
+                    sideWrapper.style.display = 'flex';
+                    sideWrapper.style.gap = '20px';
+                    sideWrapper.style.alignItems = 'flex-start';
+                    sideWrapper.style.flexWrap = 'wrap';
+                    sideWrapper.style.marginBottom = '12px';
+
+                    const textColumn = document.createElement('div');
+                    textColumn.style.flex = '1 1 320px';
+                    textColumn.style.minWidth = '260px';
+
+                    const mediaColumn = document.createElement('div');
+                    mediaColumn.style.flex = '0 0 320px';
+                    mediaColumn.style.maxWidth = '100%';
+                    mediaColumn.style.display = 'flex';
+                    mediaColumn.style.flexDirection = 'column';
+                    mediaColumn.style.alignItems = 'flex-end';
+                    mediaColumn.style.gap = '12px';
+
+                    sideWrapper.appendChild(textColumn);
+                    sideWrapper.appendChild(mediaColumn);
+                    postDiv.appendChild(sideWrapper);
+
+                    paragraphsContainer = textColumn;
+                    mediaParent = mediaColumn;
+                }
+
+                if (post.paragraphs && post.paragraphs.length) {
+                    post.paragraphs.forEach(text => {
+                        const paragraph = document.createElement('p');
+                        paragraph.textContent = text;
+                        paragraph.style.color = '#2c3e50';
+                        paragraph.style.fontSize = '15px';
+                        paragraph.style.lineHeight = '1.8';
+                        paragraph.style.marginBottom = '12px';
+                        paragraphsContainer.appendChild(paragraph);
+                    });
+                }
+
+                if (post.media && post.media.length) {
+                    const mediaWrapper = document.createElement('div');
+                    mediaWrapper.style.display = 'flex';
+                    mediaWrapper.style.flexWrap = isSideBySide ? 'nowrap' : 'wrap';
+                    mediaWrapper.style.gap = isSideBySide ? '12px' : '10px';
+                    mediaWrapper.style.marginBottom = isSideBySide ? '0' : '15px';
+                    mediaWrapper.style.width = '100%';
+                    if (isSideBySide) {
+                        mediaWrapper.style.flexDirection = 'column';
+                        mediaWrapper.style.alignItems = 'flex-end';
+                    }
+
+                    mediaParent.appendChild(mediaWrapper);
+
+                    post.media.forEach((mediaItem, index) => {
+                        const mediaContainer = document.createElement('div');
+                        const isSingle = post.media.length === 1;
+                        const isSmallMedia = (post.mediaSize === 'small' || (mediaItem && mediaItem.size === 'small')) && !isSideBySide;
+
+                        if (isSideBySide) {
+                            mediaContainer.style.width = '100%';
+                            mediaContainer.style.maxWidth = '320px';
+                        } else if (isSmallMedia) {
+                            mediaContainer.style.flex = '0 0 160px';
+                            mediaContainer.style.maxWidth = '160px';
+                        } else {
+                            mediaContainer.style.flex = isSingle ? '1 1 100%' : '1 1 calc(50% - 10px)';
+                            mediaContainer.style.maxWidth = isSingle ? '100%' : 'calc(50% - 10px)';
+                        }
+
+                        const image = document.createElement('img');
+                        image.src = mediaItem.src;
+                        image.alt = mediaItem.alt || post.title || `${project.name} - imagem ${index + 1}`;
+
+                        if (isSideBySide) {
+                            image.style.width = '100%';
+                            image.style.height = 'auto';
+                            image.style.maxWidth = '320px';
+                            image.style.objectFit = 'contain';
+                        } else if (isSmallMedia) {
+                            image.style.width = '100%';
+                            image.style.height = '120px';
+                            image.style.objectFit = 'cover';
+                        } else {
+                            image.style.width = '100%';
+                            image.style.height = 'auto';
+                            image.style.objectFit = 'cover';
+                        }
+
+                        image.style.borderRadius = '15px';
+                        image.style.cursor = 'pointer';
+                        image.addEventListener('click', () => openImageModal(mediaItem.src, image.alt));
+
+                        mediaContainer.appendChild(image);
+                        mediaWrapper.appendChild(mediaContainer);
+                    });
+                }
+
+                const footer = document.createElement('div');
+                footer.className = 'post-footer';
+
+                const reactions = document.createElement('div');
+                reactions.style.display = 'flex';
+                reactions.style.alignItems = 'center';
+                reactions.style.gap = '5px';
+                const reactionIcon = (post.reactions && post.reactions.icon) || 'Thumbs%20up.png';
+                const reactionAlt = (post.reactions && post.reactions.alt) || 'Reação';
+                const reactionCount = (post.reactions && post.reactions.count) || '0';
+
+                const reactionImg = document.createElement('img');
+                reactionImg.src = `imagens/icones/${reactionIcon}`;
+                reactionImg.alt = reactionAlt;
+                reactionImg.className = 'icon icon--small';
+
+                const reactionCountSpan = document.createElement('span');
+                reactionCountSpan.style.color = '#7f8c8d';
+                reactionCountSpan.style.fontSize = '14px';
+                reactionCountSpan.textContent = reactionCount;
+
+                reactions.appendChild(reactionImg);
+                reactions.appendChild(reactionCountSpan);
+
+                const actions = document.createElement('div');
+                actions.className = 'post-actions';
+
+                const likeButton = document.createElement('button');
+                likeButton.className = 'icon-button';
+                likeButton.style.gap = '6px';
+                likeButton.style.color = '#7f8c8d';
+                likeButton.style.fontSize = '16px';
+                likeButton.setAttribute('aria-label', 'Curtir post');
+                likeButton.innerHTML = `<img src="imagens/icones/Thumbs%20up.png" alt="" class="icon icon--small"><span>Curtir</span>`;
+                likeButton.addEventListener('click', function () {
+                    likePost(this);
+                });
+
+                const commentButton = document.createElement('button');
+                commentButton.className = 'icon-button';
+                commentButton.style.gap = '6px';
+                commentButton.style.color = '#7f8c8d';
+                commentButton.style.fontSize = '16px';
+                commentButton.setAttribute('aria-label', 'Comentar');
+                commentButton.innerHTML = `<img src="imagens/icones/chat_bubble.png" alt="" class="icon icon--small"><span>Comentar</span>`;
+                commentButton.addEventListener('click', () => showAlert('Comentar'));
+
+                const shareButton = document.createElement('button');
+                shareButton.className = 'icon-button';
+                shareButton.style.gap = '6px';
+                shareButton.style.color = '#7f8c8d';
+                shareButton.style.fontSize = '16px';
+                shareButton.setAttribute('aria-label', 'Compartilhar');
+                shareButton.innerHTML = `<img src="imagens/icones/send.png" alt="" class="icon icon--small"><span>Compartilhar</span>`;
+                shareButton.addEventListener('click', () => showAlert('Compartilhar'));
+
+                actions.appendChild(likeButton);
+                actions.appendChild(commentButton);
+                actions.appendChild(shareButton);
+
+                footer.appendChild(reactions);
+                footer.appendChild(actions);
+                postDiv.appendChild(footer);
+
+                appendComments(postDiv, post.comments);
+
+                postsContainer.appendChild(postDiv);
+            });
+        }
+
+        function updateProjectProfile() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('projeto') || urlParams.get('id') || 'bem-reciclagem';
+            const project = projects[projectId] || projects['bem-reciclagem'];
+
+            const logoWrapper = document.querySelector('.org-logo');
+            if (logoWrapper) {
+                logoWrapper.style.backgroundColor = projectId === 'remar' ? '#000000' : '#ffffff';
+            }
+
+                document.getElementById('orgName').textContent = project.name;
+                document.getElementById('orgLogo').src = project.logo;
+            document.getElementById('orgHandle').textContent = `${project.handle} • ${project.location}`;
+                document.getElementById('orgDescription').textContent = project.description;
+                document.getElementById('orgLocation').textContent = project.locationFull || project.location;
+            document.getElementById('orgFounded').textContent = project.founded || 'Ativo';
+                
+                const siteLink = document.getElementById('orgSite');
+                const siteBadge = document.getElementById('orgSiteLink');
+                if (project.siteUrl && project.siteUrl !== '#') {
+                    siteLink.href = project.siteUrl;
+                    siteLink.textContent = project.site;
+                    siteBadge.href = project.siteUrl;
+                } else {
+                    siteLink.href = '#';
+                siteLink.textContent = project.site || 'site indisponível';
+                    siteBadge.href = '#';
+                }
+                
+                const tagsContainer = document.getElementById('orgTags');
+                tagsContainer.innerHTML = '';
+            (project.tags || []).forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'org-tag';
+                    span.textContent = tag;
+                    tagsContainer.appendChild(span);
+                });
+                
+            renderStats(project.stats);
+            renderGallery(project.gallery);
+            renderPosts(project);
+        }
+
+        updateProjectProfile();
+    </script>
+</body>
+</html>
+

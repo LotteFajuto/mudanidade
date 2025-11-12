@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Brasileiros - Muda.nidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <ul class="nav-links">
+            <li><a href="projetos.html">projetos</a></li>
+            <li><a href="voluntariado.html">voluntariado</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header de Projetos -->
+        <div style="display: grid; grid-template-columns: 1fr 420px; gap: 50px; align-items: center; margin: 40px 0 50px 0;">
+            <!-- Lado Esquerdo: Título, Descrição e Estatísticas -->
+            <div>
+                <!-- Título em uma linha -->
+                <h1 style="font-size: 68px; margin-bottom: 15px; font-family: 'Josefin Slab', serif; font-weight: 600; line-height: 1.1;">
+                    Projetos <span style="color: #ff8c42;">Brasileiros</span>
+                </h1>
+                
+                <!-- Subtítulo/Descrição -->
+                <p style="font-size: 16px; color: #bdc3c7; margin-bottom: 35px; max-width: 500px; line-height: 1.6;">
+                    Descubra iniciativas sustentáveis e sociais que estão transformando comunidades em todo o Brasil
+                </p>
+                
+                <!-- Estatísticas com layout mais interessante -->
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 30px;">
+                    <div style="background: linear-gradient(135deg, #ff8c42 0%, #e67e22 100%); color: white; padding: 30px 25px; border-radius: 20px; text-align: center; box-shadow: 0 8px 20px rgba(255, 140, 66, 0.3);">
+                        <div style="font-size: 46px; font-weight: bold; margin-bottom: 8px;">+200</div>
+                        <div style="font-size: 13px; opacity: 0.95;">projetos cadastrados</div>
+                    </div>
+                    <div style="background-color: white; border: 3px solid #ff8c42; color: #ff8c42; padding: 30px 25px; border-radius: 20px; text-align: center; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+                        <div style="font-size: 46px; font-weight: bold; margin-bottom: 8px;">+1.000</div>
+                        <div style="font-size: 13px;">conexões criadas</div>
+                    </div>
+                </div>
+                
+                <!-- Badges/Destaques -->
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                    <div style="background-color: rgba(255, 140, 66, 0.15); color: #ff8c42; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; border: 1px solid rgba(255, 140, 66, 0.3); display: flex; align-items: center; gap: 8px;">
+                        <span>🌱</span>
+                        <span>Sustentabilidade</span>
+                    </div>
+                    <div style="background-color: rgba(255, 140, 66, 0.15); color: #ff8c42; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; border: 1px solid rgba(255, 140, 66, 0.3); display: flex; align-items: center; gap: 8px;">
+                        <span>🤝</span>
+                        <span>Impacto Social</span>
+                    </div>
+                    <div style="background-color: rgba(255, 140, 66, 0.15); color: #ff8c42; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; border: 1px solid rgba(255, 140, 66, 0.3); display: flex; align-items: center; gap: 8px;">
+                        <span>🇧🇷</span>
+                        <span>Todo Brasil</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lado Direito: Foto Grande com Efeito -->
+            <div style="text-align: center; position: relative;">
+                <!-- Elemento decorativo de fundo -->
+                <div style="position: absolute; top: -15px; right: -15px; width: 420px; height: 420px; background: linear-gradient(135deg, rgba(255, 140, 66, 0.2), rgba(230, 126, 34, 0.2)); border-radius: 20px; z-index: 0;"></div>
+                
+                <!-- Container da imagem -->
+                <div style="width: 420px; height: 420px; border-radius: 20px; overflow: hidden; margin: 0 auto; background-color: white; display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: 0 15px 40px rgba(0,0,0,0.25); position: relative; z-index: 1;">
+                    <img src="imagens/ciclofoto.jpg" alt="Ciclofoto" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    
+                    <!-- Badge "Destaque" no canto superior -->
+                    <div style="position: absolute; top: 20px; left: 20px; background-color: rgba(255, 140, 66, 0.95); color: white; padding: 8px 18px; border-radius: 25px; font-size: 13px; font-weight: 600; backdrop-filter: blur(10px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); display: flex; align-items: center; gap: 6px;">
+                        <span>⭐</span>
+                        <span>Destaque</span>
+                    </div>
+                    
+                    <!-- Botão -->
+                    <button class="cta-button" style="padding: 13px 35px; font-size: 15px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);" onclick="window.location.href='organizacao.html?projeto=ciclo-organico'">Conheça!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="map-container" style="position: relative; background: linear-gradient(135deg, #e8f4f8 0%, #d4e8f1 100%); display: flex; align-items: center; justify-content: center;">
+            <!-- Mapa SVG do Brasil -->
+            <svg viewBox="0 0 800 600" style="width: 100%; height: 100%; max-width: 700px;">
+                <!-- Contorno simplificado do Brasil -->
+                <path d="M 400 50 
+                         L 450 100 L 500 120 L 550 150 L 580 200 L 600 250 
+                         L 590 300 L 580 350 L 560 400 L 530 450 L 480 490 
+                         L 420 520 L 360 540 L 300 550 L 250 540 L 200 520 
+                         L 170 480 L 150 420 L 140 360 L 130 300 L 140 240 
+                         L 160 180 L 190 140 L 230 110 L 280 90 L 330 70 L 380 55 Z" 
+                      fill="#ff8c42" opacity="0.15" stroke="#ff8c42" stroke-width="2"/>
+                
+                <!-- Marcadores de Projetos -->
+                <!-- RJ - Rio de Janeiro -->
+                <g class="map-marker" onclick="alert('Rio de Janeiro - 5 projetos: Bem Reciclagem, Ciclo Orgânico, Terreiro do Carmo e mais')" style="cursor: pointer;">
+                    <circle cx="500" cy="420" r="12" fill="#ff8c42" opacity="0.8"/>
+                    <circle cx="500" cy="420" r="8" fill="white"/>
+                    <text x="520" y="425" font-size="14" fill="#2c3e50" font-weight="bold">RJ</text>
+                </g>
+                
+                <!-- AL - Alagoas -->
+                <g class="map-marker" onclick="alert('Alagoas - Água Camelo')" style="cursor: pointer;">
+                    <circle cx="480" cy="280" r="12" fill="#ff8c42" opacity="0.8"/>
+                    <circle cx="480" cy="280" r="8" fill="white"/>
+                    <text x="500" y="285" font-size="14" fill="#2c3e50" font-weight="bold">AL</text>
+                </g>
+                
+                <!-- MS - Mato Grosso do Sul -->
+                <g class="map-marker" onclick="alert('Mato Grosso do Sul - Instituto Onça Pintada')" style="cursor: pointer;">
+                    <circle cx="280" cy="380" r="12" fill="#ff8c42" opacity="0.8"/>
+                    <circle cx="280" cy="380" r="8" fill="white"/>
+                    <text x="300" y="385" font-size="14" fill="#2c3e50" font-weight="bold">MS</text>
+                </g>
+                
+                <!-- SP - São Paulo -->
+                <g class="map-marker" onclick="alert('São Paulo - 3 projetos ativos')" style="cursor: pointer;">
+                    <circle cx="420" cy="460" r="12" fill="#ff8c42" opacity="0.8"/>
+                    <circle cx="420" cy="460" r="8" fill="white"/>
+                    <text x="440" y="465" font-size="14" fill="#2c3e50" font-weight="bold">SP</text>
+                </g>
+                
+                <!-- BA - Bahia -->
+                <g class="map-marker" onclick="alert('Bahia - 2 projetos ativos')" style="cursor: pointer;">
+                    <circle cx="450" cy="300" r="12" fill="#ff8c42" opacity="0.8"/>
+                    <circle cx="450" cy="300" r="8" fill="white"/>
+                    <text x="470" y="305" font-size="14" fill="#2c3e50" font-weight="bold">BA</text>
+                </g>
+                
+                <!-- Animação de pulso nos marcadores -->
+                <style>
+                    .map-marker circle:first-child {
+                        animation: pulse 2s infinite;
+                    }
+                    @keyframes pulse {
+                        0%, 100% { r: 12; opacity: 0.8; }
+                        50% { r: 16; opacity: 0.4; }
+                    }
+                    .map-marker:hover circle:first-child {
+                        fill: #e67e22;
+                    }
+                </style>
+            </svg>
+            
+            <!-- Legenda -->
+            <div style="position: absolute; bottom: 20px; right: 20px; background-color: white; padding: 15px 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <p style="font-size: 14px; color: #2c3e50; font-weight: bold; margin-bottom: 8px; font-family: 'Josefin Slab', serif;">Mapa Interativo</p>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <div style="width: 12px; height: 12px; background-color: #ff8c42; border-radius: 50%;"></div>
+                    <span style="font-size: 12px; color: #7f8c8d;">Clique nos marcadores</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtros -->
+        <div style="margin: 30px 0;">
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button class="tab-btn active" onclick="filterProjects('destaques')" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>PROJETOS DESTAQUES ⭐</span>
+                </button>
+                <button class="tab-btn" onclick="filterProjects('recentes')">PROJETOS RECENTES</button>
+                <button class="tab-btn" onclick="filterProjects('favoritos')">FAVORITOS</button>
+                <button class="tab-btn" onclick="filterProjects('tags')">TAGS</button>
+                <button class="tab-btn" onclick="filterProjects('voluntariado')">VOLUNTARIADO</button>
+            </div>
+        </div>
+
+        <!-- Seção de Tags -->
+        <div style="background-color: #ecf0f1; border-radius: 20px; padding: 30px; margin-bottom: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
+                <h3 style="color: #2c3e50; margin: 0;">Projetos</h3>
+                <div class="search-box" style="width: 300px; max-width: 100%;">
+                    <input type="text" placeholder="Pesquisar projetos..." id="tagSearchInput" onkeyup="filterTags()" style="flex: 1; border: none; outline: none; color: #2c3e50;">
+                    <button class="icon-button" onclick="filterTags()" aria-label="Pesquisar tags">
+                        <img src="imagens/icones/Search.png" alt="" class="icon icon--small">
+                    </button>
+                </div>
+            </div>
+            <div id="tagsContainer" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span class="tag" onclick="searchByTag('reciclagem')">reciclagem</span>
+                <span class="tag" onclick="searchByTag('sustentabilidade')">sustentabilidade</span>
+                <span class="tag" onclick="searchByTag('meio ambiente')">meio ambiente</span>
+                <span class="tag" onclick="searchByTag('compostagem')">compostagem</span>
+                <span class="tag" onclick="searchByTag('resíduos orgânicos')">resíduos orgânicos</span>
+                <span class="tag" onclick="searchByTag('fauna')">fauna</span>
+                <span class="tag" onclick="searchByTag('conservação')">conservação</span>
+                <span class="tag" onclick="searchByTag('biodiversidade')">biodiversidade</span>
+                <span class="tag" onclick="searchByTag('impacto social')">impacto social</span>
+                <span class="tag" onclick="searchByTag('praias')">praias</span>
+                <span class="tag" onclick="searchByTag('água')">água</span>
+                <span class="tag" onclick="searchByTag('cultura')">cultura</span>
+                <span class="tag" onclick="searchByTag('tradição')">tradição</span>
+                <span class="tag" onclick="searchByTag('educação')">educação</span>
+                <span class="tag" onclick="searchByTag('oceanos')">oceanos</span>
+                <span class="tag" onclick="searchByTag('RJ')">RJ</span>
+                <span class="tag" onclick="searchByTag('SP')">SP</span>
+                <span class="tag" onclick="searchByTag('GO')">GO</span>
+                <span class="tag" onclick="searchByTag('SC')">SC</span>
+                <span class="tag" onclick="searchByTag('AL')">AL</span>
+            </div>
+        </div>
+
+        <!-- Grid de Projetos -->
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projeto 1: Bem Reciclagem -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=bem-reciclagem'" style="position: relative; cursor: pointer;">
+                <span class="project-badge-new">NOVO</span>
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Bem Reciclagem</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">reciclagem</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2: Ciclo Orgânico -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=ciclo-organico'" style="position: relative; cursor: pointer;">
+                <span class="project-badge-new">NOVO</span>
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Ciclo Orgânico</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">compostagem</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3: ReMar -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=remar'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/remar_logo.jpeg" alt="Remar.ORG">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Remar.ORG</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">oceanos</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">reciclagem</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 4: Onça Pintada -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=onca-pintada'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/criadouro_logo.png" alt="Inst. Onça Pintada">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Inst. Onça Pintada</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">fauna</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">MS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 5: Terreiro do Carmo -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=terreiro'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/terreiro_logo.webp" alt="Terreiro do Carmo">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Terreiro do Carmo</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">cultura</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 6: Água Camelo -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=agua-camelo'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Água Camelo</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">água</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">AL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 7: Instituto Lontra -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=lontra'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/lontra_logo.jpg" alt="Instituto Lontra">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Instituto Lontra</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">fauna</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">conservação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 8: Recicla Orla -->
+            <div class="project-card" onclick="window.location.href='organizacao.html?projeto=recicla-orla'" style="cursor: pointer;">
+                <div class="project-card-header">
+                    <div class="project-logo">
+                        <img src="imagens/reciclaorla_logo.png" alt="Recicla Orla">
+                    </div>
+                    <div>
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Recicla Orla</h3>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">reciclagem</span>
+                            <span style="background-color: #e8f4f8; color: #2c3e50; padding: 4px 10px; border-radius: 12px; font-size: 11px;">praias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
+                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

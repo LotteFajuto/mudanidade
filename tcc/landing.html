@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda.nidade - A mudança que só acontece em comunidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing-page">
+    <!-- Navegação -->
+    <nav class="navbar" style="position: absolute; width: 100%; z-index: 100;">
+        <div class="logo" style="font-family: 'Josefin Slab', serif;">muda.nidade</div>
+        <ul class="nav-links">
+            <li><a href="projetos.html" class="nav-tab">projetos</a></li>
+            <li><a href="voluntariado.html" class="nav-tab">voluntariado</a></li>
+            <li><a href="#sobre" class="nav-tab">sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra de Navegação Destacada -->
+    <div class="landing-nav-bar">
+        <a href="#projetos" class="landing-nav-item">projetos</a>
+        <a href="#voluntariado" class="landing-nav-item">voluntariado</a>
+        <a href="#sobre-nos" class="landing-nav-item">sobre</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-banner" style="height: 500px; margin: 0; border-radius: 0;">
+        <h1 class="hero-title">muda.nidade</h1>
+        <p class="hero-subtitle">a mudança que só acontece em comunidade</p>
+        <button class="login-btn" onclick="window.location.href='index.html'">login</button>
+        <p style="font-size: 12px; margin-top: 10px;">Cadastre-se</p>
+    </div>
+
+    <!-- Espaçamento Azul -->
+    <div style="height: 20px; background-color: #1a2332;"></div>
+
+    <!-- Expositor de Projetos -->
+    <div style="background: linear-gradient(180deg, #1a2332 0%, #f8f9fa 20%, white 100%); padding: 80px 0 60px 0; overflow: hidden;">
+        <h2 style="color: #2c3e50; text-align: center; font-size: 32px; margin-bottom: 20px; font-family: 'Josefin Slab', serif;">Projetos em Destaque</h2>
+        <p style="color: #7f8c8d; text-align: center; font-size: 20px; margin-bottom: 40px;">Conheça as organizações que fazem a diferença</p>
+        <div class="projects-carousel">
+            <div class="projects-carousel-track">
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
+                <!-- Duplicar para criar efeito loop infinito -->
+                <div class="project-logo-item">
+                    <img src="imagens/aguacamelo_logo.jpeg" alt="Água Camelo" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/bemreciclagem_logo.jpeg" alt="Bem Reciclagem" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/remar_logo.jpeg" alt="Remar" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/cicloorganico_logo.png" alt="Ciclo Orgânico" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/criadouro_logo.png" alt="Criadouro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/terreiro_logo.webp" alt="Terreiro" onerror="this.style.display='none'">
+                </div>
+                <div class="project-logo-item">
+                    <img src="imagens/lontra_logo.jpg" alt="Lontra" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Seção de Projetos -->
+    <div id="projetos" style="padding: 80px 50px; background-color: #1a2332;">
+        <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            
+            <!-- Cabeçalho da Seção -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: #2c3e50; font-size: 42px; margin-bottom: 15px; font-family: 'Josefin Slab', serif;">projetos</h2>
+                <p style="color: #7f8c8d; font-size: 20px; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Existem tantos projetos no Brasil que fazem a diferença, que tal se conectar com um deles?
+                </p>
+            </div>
+
+            <!-- Estatísticas -->
+            <div style="display: flex; gap: 15px; margin-bottom: 50px; flex-wrap: wrap; justify-content: center;">
+                <div class="stat-box" style="flex: 0 0 220px; padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+                    <div class="stat-number" style="font-size: 52px; color: white; margin-bottom: 8px;">+200</div>
+                    <div class="stat-label" style="color: white; font-size: 15px;">projetos cadastrados</div>
+                </div>
+                <div style="flex: 0 0 220px; background-color: white; border: 3px solid #ff8c42; color: #ff8c42; padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+                    <div style="font-size: 52px; font-weight: bold; margin-bottom: 8px;">+1.000</div>
+                    <div style="font-size: 15px;">conexões criadas</div>
+                </div>
+                <div style="flex: 0 0 220px; background-color: #2c3e50; color: white; padding: 35px 25px; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+                    <div style="font-size: 52px; font-weight: bold; margin-bottom: 8px;">+50</div>
+                    <div style="font-size: 15px;">comunidades ativas</div>
+                </div>
+            </div>
+
+            <!-- Grid de Cards Interativos -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 40px;">
+                
+                <!-- Card 1: Descubra Projetos -->
+                <div onclick="window.location.href='projetos.html'" style="position: relative; height: 320px; background: url('imagens/gramachoremar.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 140, 66, 0.85), rgba(44, 62, 80, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Descubra</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Explore centenas de projetos sociais e sustentáveis em todo o Brasil</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Ver projetos <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Seja Parceiro -->
+                <div onclick="window.location.href='projetos.html'" style="position: relative; height: 320px; background: url('imagens/projetoscamelo.jpg'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(26, 35, 50, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Seja Parceiro</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Cadastre seu projeto e amplifique seu impacto social</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Cadastrar projeto <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Faça Parte -->
+                <div onclick="window.location.href='projetos.html'" style="position: relative; height: 320px; background: url('imagens/caminhosremar.png'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(26, 35, 50, 0.85), rgba(255, 140, 66, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Faça Parte</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Conecte-se com uma comunidade que quer fazer a diferença</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Participar agora <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="cta-button" onclick="window.location.href='projetos.html'" style="font-family: 'Josefin Slab', serif; font-size: 16px; padding: 15px 45px;">Explorar Todos os Projetos</button>
+            </div>
+            
+        </div>
+    </div>
+<!-- Seção de Depoimentos -->
+    <div style="padding: 20px 50px; background-color: #1a2332; margin-top: 20px;">
+        <div style="background-color: #ff8c42; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            <div style="display: flex; gap: 20px; overflow-x: auto; padding: 10px 0; justify-content: center;">
+                <div style="min-width: 250px; background-color: white; border-radius: 20px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; overflow: hidden;">
+                        <img src="imagens/pessoas/pessoa1.jpg" alt="Depoimento" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px; margin-top: 0;">Marina Silva</h4>
+                    <p style="color: #7f8c8d; font-size: 13px; margin: 0;">Encontrei aqui projetos incríveis que transformam comunidades. A conexão é real e o impacto, imensurável!</p>
+                </div>
+
+                <div style="min-width: 250px; background-color: white; border-radius: 20px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; overflow: hidden;">
+                        <img src="imagens/pessoas/pessoa2.jpg" alt="Depoimento" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px; margin-top: 0;">Luiza Mello</h4>
+                    <p style="color: #7f8c8d; font-size: 13px; margin: 0;">Participar de voluntariado mudou minha perspectiva. Agora vejo o poder de ações coletivas para um futuro melhor.</p>
+                </div>
+
+                <div style="min-width: 250px; background-color: white; border-radius: 20px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; overflow: hidden;">
+                        <img src="imagens/pessoas/pessoa3.jpg" alt="Depoimento" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px; margin-top: 0;">Fernando Costa</h4>
+                    <p style="color: #7f8c8d; font-size: 13px; margin: 0;">A plataforma facilitou minha busca por projetos alinhados aos meus valores. A experiência superou expectativas!</p>
+                </div>
+
+                <div style="min-width: 250px; background-color: white; border-radius: 20px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 15px; overflow: hidden;">
+                        <img src="imagens/pessoas/pessoa4.jpg" alt="Depoimento" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px; margin-top: 0;">Rafael Santos</h4>
+                    <p style="color: #7f8c8d; font-size: 13px; margin: 0;">Conheci iniciativas sustentáveis incríveis e uma comunidade engajada. Juntos, fazemos a diferença de verdade!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Voluntariado -->
+    <div id="voluntariado" style="padding: 60px 50px; background-color: #1a2332; margin-top: 20px;">
+        <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            
+            <!-- Cabeçalho da Seção -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: #2c3e50; font-size: 42px; margin-bottom: 15px; font-family: 'Josefin Slab', serif;">voluntariado</h2>
+                <p style="color: #7f8c8d; font-size: 20px; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Conectamos você com oportunidades de voluntariado em projetos que transformam vidas
+                </p>
+            </div>
+
+            <!-- Imagem Hero Grande -->
+            <div style="margin-bottom: 50px; position: relative; border-radius: 25px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                <img src="imagens/voluntariadobeach.jpg" alt="Voluntariado" style="width: 100%; height: 400px; object-fit: cover;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 40px 30px 30px;">
+                    <p style="color: white; font-size: 17px; max-width: 600px; line-height: 1.6;">
+                        <strong style="color: #ff8c42; font-size: 18px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);">Apoiamos os projetos e a inserção direta dos voluntários,</strong> direcionando você para aquela comunidade já existente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid de Cards de Ação -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 40px;">
+                
+                <!-- Card 1: Descubra -->
+                <div onclick="window.location.href='voluntariado.html'" style="position: relative; height: 280px; background: url('imagens/voluntario 1.jpg'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255, 140, 66, 0.85), rgba(44, 62, 80, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Descubra</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Encontre oportunidades de voluntariado que combinam com você</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Ver oportunidades <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Voluntarie-se -->
+                <div onclick="window.location.href='voluntariado.html'" style="position: relative; height: 280px; background: url('imagens/voluntario2.jpg'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(44, 62, 80, 0.85), rgba(26, 35, 50, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Voluntarie-se</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Comece sua jornada como voluntário e faça a diferença</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Começar agora <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Divulgue -->
+                <div onclick="window.location.href='voluntariado.html'" style="position: relative; height: 280px; background: url('imagens/voluntario3.jpg'); background-size: cover; background-position: center; border-radius: 20px; overflow: hidden; cursor: pointer; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;" onmouseover="this.querySelector('.card-overlay').style.opacity='1'" onmouseout="this.querySelector('.card-overlay').style.opacity='0.85'">
+                    <div class="card-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(26, 35, 50, 0.85), rgba(255, 140, 66, 0.85)); display: flex; flex-direction: column; justify-content: flex-end; padding: 30px; opacity: 0.85; transition: opacity 0.3s ease;">
+                        <h3 style="color: white; font-size: 26px; margin-bottom: 12px; font-family: 'Josefin Slab', serif; font-weight: 600;">Divulgue</h3>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 14px; line-height: 1.5; margin-bottom: 18px;">Compartilhe oportunidades e inspire outras pessoas</p>
+                        <div style="color: white; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                            Compartilhar <span style="font-size: 18px;">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <div style="background-color: white; border-radius: 20px; padding: 35px; margin-bottom: 40px; border-left: 5px solid #ff8c42;">
+                <p style="color: #2c3e50; font-size: 15px; line-height: 1.8; margin: 0;">
+                    <span style="display: inline-flex; align-items: center; gap: 8px;">
+                        <img src="imagens/icones/Settings.png" alt="" class="icon icon--small">
+                        <strong>Como funciona:</strong>
+                    </span>
+                    Conhecemos projetos que buscam voluntários e plataformas especializadas em intermediar esse processo. Nosso papel é conectar você com essas iniciativas de forma direta e transparente.
+                </p>
+            </div>
+
+            <!-- CTA Final -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="cta-button" onclick="window.location.href='voluntariado.html'" style="font-family: 'Josefin Slab', serif; font-size: 16px; padding: 15px 45px;">Explorar Voluntariado</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Espaçamento Azul -->
+    <div style="height: 20px; background-color: #1a2332;"></div>
+
+    <!-- Seção Expositor de Projetos Parceiros -->
+    <div style="padding: 80px 50px; background-color: #1a2332;">
+        <div style="background-color: #ff8c42; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+            
+            <!-- Cabeçalho -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: white; text-align: center; font-size: 36px; margin-bottom: 15px; font-family: 'Josefin Slab', serif;">Nossos Parceiros</h2>
+            </div>
+
+            <!-- Container de Logos -->
+            <div style="display: flex; gap: 15px; overflow-x: auto; padding: 20px 10px; justify-content: center; flex-wrap: wrap; align-items: center;">
+                    
+                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="imagens/atados_logo.png" alt="Atados" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
+                    </div>
+                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="imagens/workway_logo.png" alt="Workway" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="imagens/transforma_logo.png" alt="Transforma" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
+                    </div>
+
+                    <div style="flex: 0 0 auto; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 20px; padding: 20px; transition: transform 0.3s; box-shadow: 0 3px 10px rgba(0,0,0,0.1);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <img src="imagens/ovg_logo.png" alt="OVG" style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;" onerror="this.style.display='none'">
+                    </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; margin-top: 35px;">
+                <button class="cta-button" onclick="window.location.href='projetos.html'" style="font-family: 'Josefin Slab', serif; font-size: 15px; padding: 12px 40px; background-color: white; color: #ff8c42; border: 3px solid white;">Ver Mais</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Espaçamento Azul -->
+    <div style="height: 20px; background-color: #1a2332;"></div>
+
+    <!-- Seção Sobre Nós -->
+ <div id="sobre-nos" style="padding: 20px 50px; background-color: #1a2332;">
+    <div style="background-color: #ecf0f1; padding: 50px; border-radius: 30px; max-width: 1250px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+        <h2 style="color: #2c3e50; font-size: 36px; margin-bottom: 40px; font-family: 'Josefin Slab', serif;">sobre nós (mim)</h2>
+        
+        <div style="display: flex; gap: 40px; align-items: center; flex-wrap: wrap;">
+            <!-- Imagem -->
+            <div style="flex: 0 0 300px;">
+                <img src="imagens/pessoas/eu.jpg" alt="Anna Mathias" style="width: 100%; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); object-fit: cover;">
+            </div>
+            
+            <!-- Texto -->
+            <div style="flex: 1; color: #2c3e50; min-width: 300px;">
+                <p style="margin-bottom: 20px; line-height: 1.8; font-size: 15px;">
+                    Por enquanto esse projeto está sendo desenvolvido por mim, Anna Mathias, uma designer que sonha em fazer a diferença no mundo de alguma forma.
+                </p>
+                
+                <p style="margin-bottom: 20px; line-height: 1.8; font-size: 15px;">
+                    Este site faz parte do Trabalho de Conclusão de Curso em Design e nasceu com a ideia de criar um espaço digital dedicado à divulgação de projetos sustentáveis e sociais no Brasil.
+                </p>
+                
+                <p style="margin-bottom: 25px; line-height: 1.8; font-size: 15px;">
+                    <strong style="color: #ff8c42;">O objetivo é dar visibilidade a iniciativas que transformam comunidades e conectar pessoas</strong> que desejam ajudar ou se inspirar de alguma forma.
+                </p>
+                
+                <p style="margin-bottom: 25px; line-height: 1.8; font-size: 15px;">
+                    Estou aberta a parcerias, programadores e donos de projetos para começar a divulgar esse projeto para ainda mais pessoas!
+                </p>
+                
+                <p style="margin-bottom: 30px; line-height: 1.8; font-size: 15px;">
+                    Quer conhecer meus outros projetos, ou quem sabe, quer conversar comigo? Só chamar!
+                </p>
+                
+                <!-- Botões -->
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <button class="cta-button" onclick="window.open('https://www.behance.net/annamathias1', '_blank')" style="font-family: 'Josefin Slab', serif; padding: 12px 35px;">Portfólio</button>
+                    <button class="cta-button" onclick="window.open('mailto:contato@email.com')" style="font-family: 'Josefin Slab', serif; padding: 12px 35px; background-color: white; color: #ff8c42; border: 3px solid #ff8c42;">Contatos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Espaçamento Azul -->
+    <div style="height: 20px; background-color: #1a2332;"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
+                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

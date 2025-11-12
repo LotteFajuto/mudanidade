@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntariado - Muda.nidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="font-family: 'Josefin Slab', serif; text-decoration: none; color: inherit; cursor: pointer;">muda.nidade</a>
+        <ul class="nav-links">
+            <li><a href="projetos.html">projetos</a></li>
+            <li><a href="voluntariado.html">voluntariado</a></li>
+            <li><a href="perfil.html">perfil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section de Voluntariado -->
+        <div style="margin: 40px 0;">
+            <h1 style="font-size: 48px; margin-bottom: 20px; text-align: center; font-family: 'Josefin Slab', serif;">
+                O que é ser um <span style="color: #ff8c42;">Voluntário?</span>
+            </h1>
+            
+            <div style="display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 30px; margin-top: 30px; align-items: center;">
+                <div style="background: url('imagens/voluntariadobeach.jpg') center/cover; border-radius: 20px; height: 440px; position: relative;">
+                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
+                        <button class="cta-button" onclick="showAlert('Conheça o projeto Recicla Orla')">Recicla Orla</button>
+                    </div>
+                </div>
+                
+                <div style="background-color: #ecf0f1; border-radius: 20px; padding: 35px; color: #2c3e50; display: flex; align-items: center; justify-content: center; font-family: 'Josefin Slab', serif;">
+                    <div style="text-align: center;">
+                        <p style="font-size: 19px; line-height: 1.8; margin-bottom: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Ser voluntário é, no fundo, sobre <strong style="color: #ff8c42;">doar um pouco de si</strong> – do tempo, da energia, dos talentos – para algo maior que a própria rotina. Não é só sobre "ajudar os outros", é também um <strong style="color: #ff8c42;">caminho de troca.</strong>
+                        </p>
+                        <p style="font-size: 19px; line-height: 1.8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Muitas vezes, quem se engaja descobre <strong style="color: #ff8c42;">novas habilidades, amplia horizontes e até encontra novos propósitos.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Missão da Plataforma -->
+        <div style="background-color: #34495e; border-radius: 20px; padding: 40px; margin: 40px 0;">
+            <p style="font-size: 18px; line-height: 1.8; text-align: center; color: white;">
+                <strong>Nosso papel é facilitar a sua descoberta.</strong> Reunimos aqui instituições e projetos que precisam de voluntários, mas o processo de inscrição e participação acontece <strong style="color: #ff8c42;">diretamente com cada organização.</strong>
+            </p>
+        </div>
+
+        <!-- Seção de Instituições Parceiras -->
+        <div style="margin: 60px 0;">
+            <h2 style="font-size: 36px; text-align: center; margin-bottom: 40px; font-family: 'Josefin Slab', serif; color: white;">INSTITUIÇÕES PARCEIRAS</h2>
+            
+            <!-- Card Atados -->
+            <div style="background-color: #ecf0f1; border-radius: 20px; padding: 40px; margin-bottom: 30px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: center;">
+                <div style="width: 120px; height: 120px; background-color: white; border-radius: 15px; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagens/atados_logo.png" alt="Atados" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                
+                <div>
+                    <h3 style="color: #2c3e50; font-size: 28px; margin-bottom: 10px; font-family: 'Josefin Slab', serif;">Atados</h3>
+                    <a href="https://www.atados.com.br" target="_blank" style="background-color: white; display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; font-size: 12px; font-weight: bold; color: #2c3e50; text-decoration: none; transition: all 0.3s; border: 2px solid transparent;" onmouseover="this.style.backgroundColor='#ff8c42'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#2c3e50';">
+                        SITE OFICIAL ↗
+                    </a>
+                    <p style="color: #2c3e50; line-height: 1.8; font-size: 15px;">
+                        O Atados tem o objetivo de mobilizar pessoas e gerar transformações positivas na sociedade por meio de diferentes frentes de atuação. Sua plataforma digital gratuita que conecta voluntários e projetos sociais autorais, criados pela própria equipe e o fortalecimento de redes, que promove a união de forças entre organizações da sociedade civil.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card OVG -->
+            <div style="background-color: #ecf0f1; border-radius: 20px; padding: 40px; margin-bottom: 30px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: center;">
+                <div style="width: 120px; height: 120px; background-color: white; border-radius: 15px; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagens/ovg_logo.png" alt="OVG" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                
+                <div>
+                    <h3 style="color: #2c3e50; font-size: 28px; margin-bottom: 10px; font-family: 'Josefin Slab', serif;">OVG</h3>
+                    <a href="https://www.ovg.org.br/site" target="_blank" style="background-color: white; display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; font-size: 12px; font-weight: bold; color: #2c3e50; text-decoration: none; transition: all 0.3s; border: 2px solid transparent;" onmouseover="this.style.backgroundColor='#ff8c42'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#2c3e50';">
+                        SITE OFICIAL ↗
+                    </a>
+                    <p style="color: #2c3e50; line-height: 1.8; font-size: 15px;">
+                        A OVG (Organização de Voluntários Gerais) conecta pessoas que desejam fazer a diferença com projetos e causas sociais em diversas áreas. A plataforma facilita o engajamento voluntário, promovendo transformação social e fortalecendo comunidades através da ação coletiva e do impacto positivo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card Transforma -->
+            <div style="background-color: #ecf0f1; border-radius: 20px; padding: 40px; margin-bottom: 30px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: center;">
+                <div style="width: 120px; height: 120px; background-color: white; border-radius: 15px; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagens/transforma_logo.png" alt="Transforma" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                
+                <div>
+                    <h3 style="color: #2c3e50; font-size: 28px; margin-bottom: 10px; font-family: 'Josefin Slab', serif;">Transforma</h3>
+                    <a href="https://transformabrasil.com.br" target="_blank" style="background-color: white; display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; font-size: 12px; font-weight: bold; color: #2c3e50; text-decoration: none; transition: all 0.3s; border: 2px solid transparent;" onmouseover="this.style.backgroundColor='#ff8c42'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#2c3e50';">
+                        SITE OFICIAL ↗
+                    </a>
+                    <p style="color: #2c3e50; line-height: 1.8; font-size: 15px;">
+                        O Transforma Brasil é uma plataforma que conecta voluntários a projetos sociais de impacto. Com foco em educação, meio ambiente e desenvolvimento comunitário, a organização facilita a participação cidadã e promove a transformação social através do voluntariado organizado e efetivo.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card Workway -->
+            <div style="background-color: #ecf0f1; border-radius: 20px; padding: 40px; margin-bottom: 30px; display: grid; grid-template-columns: 150px 1fr; gap: 30px; align-items: center;">
+                <div style="width: 120px; height: 120px; background-color: white; border-radius: 15px; display: flex; align-items: center; justify-content: center; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagens/workway_logo.png" alt="Workway" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                
+                <div>
+                    <h3 style="color: #2c3e50; font-size: 28px; margin-bottom: 10px; font-family: 'Josefin Slab', serif;">Workaway</h3>
+                    <a href="https://www.workaway.info/pt" target="_blank" style="background-color: white; display: inline-block; padding: 8px 16px; border-radius: 20px; margin-bottom: 15px; font-size: 12px; font-weight: bold; color: #2c3e50; text-decoration: none; transition: all 0.3s; border: 2px solid transparent;" onmouseover="this.style.backgroundColor='#ff8c42'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#2c3e50';">
+                        SITE OFICIAL ↗
+                    </a>
+                    <p style="color: #2c3e50; line-height: 1.8; font-size: 15px;">
+                        A Workaway é uma plataforma de intercâmbio cultural e voluntariado que conecta viajantes com anfitriões em mais de 170 países. Oferece oportunidades únicas de trabalho nas férias, permitindo aos viajantes contribuir com comunidades locais enquanto exploram novos destinos e culturas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">muda.nidade</span>
+                <p>Conectamos pessoas, projetos e organizações que desejam gerar impacto social e ambiental positivo em todo o Brasil.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                    <a href="mailto:contato@muda.nidade.com" aria-label="E-mail">✉</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Plataforma</h3>
+                <ul>
+                    <li><a href="landing.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guia da Comunidade</a></li>
+                    <li><a href="projetos.html#projectsGrid">Mapa e Tags</a></li>
+                    <li><a href="#">Portal de Dados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@muda.nidade.com">contato@muda.nidade.com</a></li>
+                    <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">+55 21 99999-9999</a></li>
+                    <li>Rio de Janeiro • RJ</li>
+                    <li><a href="https://instagram.com/muda.nidade" target="_blank" rel="noopener">@muda.nidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2025 muda.nidade. Todos os direitos reservados.</small>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="mailto:contato@muda.nidade.com">Fale com a gente</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
